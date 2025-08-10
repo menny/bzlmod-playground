@@ -1,4 +1,9 @@
-workspace(name = "inner")
+workspace(name = "outer")
+
+local_repository(
+    name = "inner",
+    path = "inner",
+)
 
 load("@inner//third_party:repos.bzl", "load_repos")
 load_repos()
