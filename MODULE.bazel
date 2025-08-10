@@ -1,0 +1,5 @@
+module(name = "outer", version = "0.0.1")
+
+bazel_dep(name = "rules_java", version = "8.13.0")
+bazel_dep(name = "inner", version = "0.0.1")
+local_path_override(module_name = "inner", path = "inner")

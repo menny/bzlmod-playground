@@ -1,1 +1,1 @@
-common --noenable_bzlmod
+common --enable_bzlmod --enable_workspace
